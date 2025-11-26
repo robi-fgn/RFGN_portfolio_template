@@ -1,8 +1,8 @@
 # Project Brief
 
-**Student:** [Your Name]  
-**Handle:** @[your-github-username]  
-**Course:** Web Design 2025 · Fall  
+**Student:** Robi Falagán
+**Handle:** @robi-fgn
+**Course:** Web Design 2025 · Fall
 **Date:** [Fill in date - Week 2]
 
 ---
@@ -65,7 +65,7 @@
 
 ### Multilingual Considerations
 
-- Primary language:
+- Primary language: English
 - Secondary language (optional):
 - Translation strategy:
 
