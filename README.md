@@ -28,27 +28,25 @@ Project: Final
 
 ## Project Structure (update at the end)
 
-> Assets
-> CSS
+→ Assets
+→ CSS
+base.css <br>
+components.css <br>
+index.css <br>
+layout.css <br>
+other.css <br>
+→ Fonts <br>
+→ Images
+→ JS
 
-        base.css
-        components.css
-        index.css
-        layout.css
-        other.css
-    > Fonts
-    > Images
-    > JS
+→ Docs
+plan.md <br>
+project-brief.md <br>
+project-inspiration.md <br>
+project.yaml
 
-> Docs
-
-    plan.md
-    project-brief.md
-    project-inspiration.md
-    project.yaml
-
-.gitignore
-404.html
-index.html
-LICENSE
+.gitignore <br>
+404.html <br>
+index.html <br>
+LICENSE <br>
 README.md
