@@ -8,6 +8,7 @@ It will be directed towards graphic designers -although it can be applied to any
 
 ## Details
 
+Project link: https://robi-fgn.github.io/RFGN_portfolio_template/ <br>
 Student: Robi Falagán Fernández <br>
 Github: @robi-fgn <br>
 
@@ -25,28 +26,3 @@ Project: Final
 **Tools / Services:**
 
 - Bootstrap connection? (buscar nombre)
-
-## Project Structure (update at the end)
-
-→ Assets
-→ CSS
-base.css <br>
-components.css <br>
-index.css <br>
-layout.css <br>
-other.css <br>
-→ Fonts <br>
-→ Images
-→ JS
-
-→ Docs
-plan.md <br>
-project-brief.md <br>
-project-inspiration.md <br>
-project.yaml
-
-.gitignore <br>
-404.html <br>
-index.html <br>
-LICENSE <br>
-README.md
