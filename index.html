@@ -15,51 +15,117 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Shrikhand&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Caprasimo&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
 
     <!-- Local CSS -->
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/components.css" />
-    <link rel="stylesheet" href="css/other.css" />
-
-    <!-- Inline CSS for fonts because they won't work otherwise -->
-    <style>
-      body {
-        font-family: "EB Garamond", serif;
-        font-size: 16px;
-        line-height: 1.6;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-family: "Shrikhand", cursive;
-        font-weight: 400; /* explicitly set default weight */
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/other.css" />
   </head>
   <body>
-    <!-- NAVBAR WILL GO HERE (eventually idk) -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#">Brand</a>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="brand">Brand</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </div>
     </nav>
 
-    <!-- CONTENT -->
-    <main class="container py-5">
-      <h1 class="text-center mb-4 title-font">Welcome to my Project!</h1>
-      <p class="lead text-center">
-        This is still a very early version of my portfolio website. I will be
-        working on it during the next few weeks. For now I'm workig on the
-        overall structure and layout.
-      </p>
-    </main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1 class="hero-title">Portfolio</h1>
+        <p class="hero-description">
+          This is a placeholder text that describes the portfolio and the work
+          showcased here. It provides context and sets the tone for the creative
+          projects displayed below. Feel free to customize this text to reflect
+          your personal style and approach.
+        </p>
+      </div>
+
+      <div class="hero-menu-wrapper">
+        <div class="hero-line"></div>
+        <nav class="hero-menu">
+          <a href="#editorial-design" class="menu-item">Editorial Design</a>
+          <a href="#art-direction" class="menu-item">Art Direction</a>
+          <a href="#illustration" class="menu-item">Illustration</a>
+        </nav>
+        <div class="hero-line"></div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Editorial Design Section -->
+      <section
+        class="portfolio-section"
+        data-section="editorial"
+        id="editorial-design"
+      >
+        <h3 class="section-title" id="editorial-title">Editorial Design</h3>
+        <div class="projects-container">
+          <a href="#project1" class="project-card">
+            <img src="assets\images\S1_ED_01.jpg" alt="Project 1" />
+            <span class="project-title">Project One</span>
+          </a>
+          <a href="#project2" class="project-card">
+            <img src="assets\images\S1_ED_02.jpg" alt="Project 2" />
+            <span class="project-title">Project Two</span>
+          </a>
+          <a href="#project3" class="project-card">
+            <img src="assets\images\S1_ED_03.jpg" alt="Project 3" />
+            <span class="project-title">Project Three</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Art Direction Section -->
+      <section class="portfolio-section" data-section="art" id="art-direction">
+        <h3 class="section-title" id="art-title">Art Direction</h3>
+        <div class="projects-container">
+          <a href="#project4" class="project-card">
+            <img src="assets\images\S2_AD_01.jpg" alt="Project 4" />
+            <span class="project-title">Project Four</span>
+          </a>
+          <a href="#project5" class="project-card">
+            <img src="assets\images\S2_AD_02.jpg" alt="Project 5" />
+            <span class="project-title">Project Five</span>
+          </a>
+          <a href="#project6" class="project-card">
+            <img src="assets\images\S2_AD_03.jpg" alt="Project 6" />
+            <span class="project-title">Project Six</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Illustration Section -->
+      <section
+        class="portfolio-section"
+        data-section="illustration"
+        id="illustration"
+      >
+        <h3 class="section-title" id="illustration-title">Illustration</h3>
+        <div class="projects-container">
+          <a href="#project7" class="project-card">
+            <img src="assets\images\S3_I_01.jpg" alt="Project 7" />
+            <span class="project-title">Project Seven</span>
+          </a>
+          <a href="#project8" class="project-card">
+            <img src="assets\images\S3_I_02.jpg" alt="Project 8" />
+            <span class="project-title">Project Eight</span>
+          </a>
+          <a href="#project9" class="project-card">
+            <img src="assets\images\S3_I_03.jpg" alt="Project 9" />
+            <span class="project-title">Project Nine</span>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
