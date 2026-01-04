@@ -8,8 +8,43 @@ body {
   font-family: "EB Garamond", serif;
   font-weight: 500;
   color: #111;
-  background-color: #f5f5f5;
+
+  background: linear-gradient(
+    rgba(245, 245, 245, 1) 0%,
+    rgba(222, 208, 195, 1) 100%
+  );
+
   overflow-x: hidden;
+  cursor: url("../images/Red-pointer.svg") 8 8, auto;
+}
+
+/* Force black dot on all interactive elements */
+a,
+button,
+input[type="button"],
+input[type="submit"],
+label,
+select,
+textarea {
+  cursor: url("../images/Black-pointer.svg") 6 6, auto;
+}
+
+/* Force same black cursor on hover/focus too */
+a:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+label:hover,
+select:hover,
+textarea:hover,
+a:focus,
+button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+label:focus,
+select:focus,
+textarea:focus {
+  cursor: url("../images/Black-pointer.svg") 6 6, auto;
 }
 
 h1 {
@@ -38,11 +73,13 @@ h6 {
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
-  background-color: transparent;
+  background: rgba(245, 245, 245, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 3px solid #000000;
   z-index: 1000;
   transition: background-color 0.3s ease;
 }
-
 .navbar.scrolled {
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -51,7 +88,7 @@ h6 {
 .brand {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: #000000;
 }
 
 .nav-links {
@@ -61,60 +98,14 @@ h6 {
 
 .nav-links a {
   text-decoration: none;
-  color: #333;
-  font-size: 16px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #666;
-}
-
-/* Hero Section */
-.hero-section {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 0 50px 40px 50px;
-}
-
-.hero-content {
-  margin-bottom: 40px;
-}
-
-.hero-title {
-  font-size: 90px;
-  color: #333;
-  margin-bottom: 20px;
-  line-height: 1;
-}
-
-.hero-description {
-  font-size: 18px;
-  color: #666;
-  line-height: 1.6;
-  max-width: 600px;
-  margin: 0;
-}
-
-.hero-menu-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.hero-line {
-  width: 100%;
-  height: 1px;
-  background-color: #d0d0d0;
-}
-
-.hero-menu {
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  padding: 20px 0;
+  color: #e60000;
 }
 
 .menu-item {
