@@ -2,7 +2,6 @@
 
 ## Plan Overview
 
-
 ### → Objective
 
 I want to swap the mouse icon for a red dot. In order to maintain coherence, any other mouse icons (such as the pointer hand, which I was struggling with) should be a smaller, black dot.
@@ -20,30 +19,22 @@ body {
   cursor: url("../images/Red-pointer.svg") 8 8, auto;
 }
 
-a,
-button,
-input[type="button"],
-input[type="submit"],
-label,
-select,
-textarea {
-  cursor: url("../images/Black-pointer.svg") 6 6, auto;
+/* Black dot cursor for ALL other cursor types */
+* {
+  cursor: inherit;
 }
 
-a:hover,
-button:hover,
-input[type="button"]:hover,
-input[type="submit"]:hover,
-label:hover,
-select:hover,
-textarea:hover,
-a:focus,
-button:focus,
-input[type="button"]:focus,
-input[type="submit"]:focus,
-label:focus,
-select:focus,
-textarea:focus {
-  cursor: url("../images/Black-pointer.svg") 6 6, auto;
+*:not(body) {
+  cursor: url("../images/Black-pointer.svg") 6 6, pointer !important;
+}
+
+/* Keep red cursor for non-interactive areas */
+body
+  *:not(a):not(button):not(input):not(label):not(select):not(textarea):not(
+    [role="button"]
+  ):not([onclick]):not(.category-card):not(.project-card):not(
+    [class*="hover"]
+  ):not([class*="click"]) {
+  cursor: url("../images/Red-pointer.svg") 8 8, auto !important;
 }
 ```

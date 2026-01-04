@@ -8,43 +8,31 @@ body {
   font-family: "EB Garamond", serif;
   font-weight: 500;
   color: #111;
-
   background: linear-gradient(
     rgba(245, 245, 245, 1) 0%,
     rgba(222, 208, 195, 1) 100%
   );
-
   overflow-x: hidden;
   cursor: url("../images/Red-pointer.svg") 8 8, auto;
 }
 
-/* Force black dot on all interactive elements */
-a,
-button,
-input[type="button"],
-input[type="submit"],
-label,
-select,
-textarea {
-  cursor: url("../images/Black-pointer.svg") 6 6, auto;
+/* Black dot cursor for ALL other cursor types */
+* {
+  cursor: inherit;
 }
 
-/* Force black cursor on hover/focus too */
-a:hover,
-button:hover,
-input[type="button"]:hover,
-input[type="submit"]:hover,
-label:hover,
-select:hover,
-textarea:hover,
-a:focus,
-button:focus,
-input[type="button"]:focus,
-input[type="submit"]:focus,
-label:focus,
-select:focus,
-textarea:focus {
-  cursor: url("../images/Black-pointer.svg") 6 6, auto;
+*:not(body) {
+  cursor: url("../images/Black-pointer.svg") 6 6, pointer !important;
+}
+
+/* Keep red cursor for non-interactive areas */
+body
+  *:not(a):not(button):not(input):not(label):not(select):not(textarea):not(
+    [role="button"]
+  ):not([onclick]):not(.category-card):not(.project-card):not(
+    [class*="hover"]
+  ):not([class*="click"]) {
+  cursor: url("../images/Red-pointer.svg") 8 8, auto !important;
 }
 
 /* Titles */
