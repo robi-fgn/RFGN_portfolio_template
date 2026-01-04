@@ -1,12 +1,12 @@
 # Hero section background
 
-## → Plan Overview
+## Plan Overview
 
-# Objective
+### → Objective
 
 I want to have a background image at the hero section, but I have been struggling to make it blend smoothly onto the next section. I'd also want it to not just be black and white, but to be a layer with the mix-blend-mode set to multiply, but I don't know how to do this.
 
-# Request
+### → Request
 
 I am building my portfolio website's hero section. The body of the site already has a beige gradient background applied, but I want the hero section to have a black-and-white background image that blends with the gradient behind it using a multiply effect, similar to the Photoshop multiply layer mode. I The bottom of the image should fade smoothly into transparency to avoid any rough transitions between sections. The hero section already fills the entire viewport height on desktop and mobile, so the background image should scale to cover the section without deforming. The solution should not affect the text opacity inside the hero, only the hero's background.
 
