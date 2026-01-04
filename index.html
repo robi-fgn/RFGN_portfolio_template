@@ -21,13 +21,12 @@
 
     <!-- Local CSS -->
     <link rel="stylesheet" href="assets/css/index.css" />
-    <link rel="stylesheet" href="assets/css/layout.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
     <link rel="stylesheet" href="assets/css/other.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar">
+    <nav class="navbar py-3 px-3 px-md-5">
       <div class="brand">FGN Studio</div>
       <div class="nav-links">
         <a href="#about">About</a>
@@ -36,9 +35,11 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="hero-content">
-        <h1 class="hero-title">FGN Studio</h1>
+    <section
+      class="hero-section d-flex flex-column justify-content-end px-3 px-md-5 pb-4 pb-md-5"
+    >
+      <div class="hero-content mb-4 mb-md-5">
+        <h1 class="hero-title mb-3">FGN Studio</h1>
         <p class="hero-description">
           This is a placeholder text that describes the portfolio and the work
           showcased here. It provides context and sets the tone for the creative
@@ -49,18 +50,20 @@
     </section>
 
     <!-- Menu Section -->
-    <div class="hero-menu-wrapper">
-      <div class="hero-line"></div>
-      <nav class="hero-menu">
+    <div class="menu-wrapper">
+      <div class="menu-line"></div>
+      <nav
+        class="d-flex flex-column flex-md-row justify-content-center align-items-center text-center gap-3 gap-md-5 py-3"
+      >
         <a href="#editorial-design" class="menu-item">Editorial Design</a>
         <a href="#art-direction" class="menu-item">Art Direction</a>
         <a href="#illustration" class="menu-item">Illustration</a>
       </nav>
-      <div class="hero-line"></div>
+      <div class="menu-line"></div>
     </div>
 
     <!-- Main Content -->
-    <div class="container">
+    <div class="container py-5">
       <!-- Editorial Design Section -->
       <section
         class="portfolio-section"
@@ -68,7 +71,9 @@
         id="editorial-design"
       >
         <h3 class="section-title" id="editorial-title">Editorial Design</h3>
-        <div class="projects-container">
+        <div
+          class="projects-container d-flex flex-column ps-lg-5 ps-md-4 align-items-center gap-5 pb-5"
+        >
           <a href="#project1" class="project-card">
             <img src="assets\images\S1_ED_01.jpg" alt="Project 1" />
             <span class="project-title">Project One</span>
@@ -87,7 +92,9 @@
       <!-- Art Direction Section -->
       <section class="portfolio-section" data-section="art" id="art-direction">
         <h3 class="section-title" id="art-title">Art Direction</h3>
-        <div class="projects-container">
+        <div
+          class="projects-container d-flex flex-column ps-lg-5 ps-md-4 align-items-center gap-5 pb-5"
+        >
           <a href="#project4" class="project-card">
             <img src="assets\images\S2_AD_01.jpg" alt="Project 4" />
             <span class="project-title">Project Four</span>
@@ -110,7 +117,9 @@
         id="illustration"
       >
         <h3 class="section-title" id="illustration-title">Illustration</h3>
-        <div class="projects-container">
+        <div
+          class="projects-container d-flex flex-column ps-lg-5 ps-md-4 align-items-center gap-5 pb-5"
+        >
           <a href="#project7" class="project-card">
             <img src="assets\images\S3_I_01.jpg" alt="Project 7" />
             <span class="project-title">Project Seven</span>
