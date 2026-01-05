@@ -23,22 +23,27 @@ scrollTopBtn.addEventListener("click", () => {
   });
 });
 
-function openProjectModal() {
-  document.getElementById("projectModal").classList.add("active"); // Prevent scrolling
+function openProjectModal(card) {
+  document.getElementById("modalImage").src = card.dataset.image;
+  document.getElementById("modalTitle").textContent = card.dataset.title;
+  document.getElementById("modalDate").textContent = card.dataset.date;
+  document.getElementById("modalDescription").textContent =
+    card.dataset.description;
+
+  document.getElementById("projectModal").classList.add("active");
 }
 
 function closeProjectModal() {
   document.getElementById("projectModal").classList.remove("active");
-  document.body.style.overflow = ""; // Restore scrolling
+  document.body.style.overflow = "";
 }
 
 function closeModalOnOutsideClick(event) {
-  if (event.target === document.getElementById("projectModal")) {
+  if (event.target.id === "projectModal") {
     closeProjectModal();
   }
 }
 
-// Close on Escape key
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape") {
     closeProjectModal();

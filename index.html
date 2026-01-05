@@ -76,70 +76,24 @@
               <h3 class="category-title">Editorial Design</h3>
             </div>
           </div>
-
           <!-- Section 1 Project 1 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S1_ED_01.jpg')"
-              onclick="openProjectModal()"
+              data-image="assets/images/S1_ED_01.jpg"
+              data-title="Project One"
+              data-date="January 2024"
+              data-description="Here is a customizable description for the first project."
+              onclick="openProjectModal(this)"
               role="button"
               tabindex="0"
             >
               <div class="project-overlay">
-                <h4 class="project-name">Title here</h4>
+                <h4 class="project-name">Project One</h4>
                 <p class="project-description">
                   Placeholder subtitle goes here
                 </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project Modal -->
-          <div
-            class="project-modal"
-            id="projectModal"
-            onclick="closeModalOnOutsideClick(event)"
-          >
-            <div class="project-card-popup" onclick="event.stopPropagation()">
-              <!-- Close Button -->
-              <button
-                class="close-btn"
-                onclick="closeProjectModal()"
-                aria-label="Close"
-              ></button>
-
-              <!-- Project Image/GIF -->
-              <img
-                src="assets/images/S1_ED_01.jpg"
-                alt="Project Preview"
-                class="project-popup-image"
-              />
-
-              <!-- Project Content -->
-              <div class="project-popup-content">
-                <h2 class="project-popup-title">Project Title</h2>
-                <p class="project-popup-date">January 2024</p>
-                <p class="project-popup-description">
-                  This is a description of the project. It provides context
-                  about what was created, the techniques used, and the overall
-                  concept behind the work.
-                </p>
-
-                <a href="#" class="project-popup-link">
-                  See more
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <line x1="7" y1="17" x2="17" y2="7"></line>
-                    <polyline points="7 7 17 7 17 17"></polyline>
-                  </svg>
-                </a>
               </div>
             </div>
           </div>
@@ -149,9 +103,16 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S1_ED_02.jpg')"
+              data-image="assets/images/S1_ED_02.jpg"
+              data-title="Project Two"
+              data-date="February 2024"
+              data-description="Description for project two."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
-                <h4 class="project-name">Title here</h4>
+                <h4 class="project-name">Project Two</h4>
                 <p class="project-description">
                   Placeholder subtitle goes here
                 </p>
@@ -164,6 +125,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S1_ED_03.jpg')"
+              data-image="assets/images/S1_ED_03.jpg"
+              data-title="Project Three"
+              data-date="March 2024"
+              data-description="Description for project three."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -179,6 +147,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S1_ED_04.jpg')"
+              data-image="assets/images/S1_ED_04.jpg"
+              data-title="Project Four"
+              data-date="April 2024"
+              data-description="Description for project four."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -194,6 +169,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S1_ED_05.jpg')"
+              data-image="assets/images/S1_ED_05.jpg"
+              data-title="Project Five"
+              data-date="May 2024"
+              data-description="Description for project five."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -209,6 +191,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S1_ED_06.jpg')"
+              data-image="assets/images/S1_ED_06.jpg"
+              data-title="Project Six"
+              data-date="June 2024"
+              data-description="Description for project six."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -224,6 +213,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S1_ED_07.jpg')"
+              data-image="assets/images/S1_ED_07.jpg"
+              data-title="Project Seven"
+              data-date="July 2024"
+              data-description="Description for project seven."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -239,6 +235,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S1_ED_08.jpg')"
+              data-image="assets/images/S1_ED_08.jpg"
+              data-title="Project Eight"
+              data-date="August 2024"
+              data-description="Description for project eight."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -261,6 +264,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S2_AD_01.jpg')"
+              data-image="assets/images/S2_AD_01.jpg"
+              data-title="Project One"
+              data-date="January 2024"
+              data-description="Description for project one."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -276,6 +286,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S2_AD_02.jpg')"
+              data-image="assets/images/S2_AD_02.jpg"
+              data-title="Project Two"
+              data-date="February 2024"
+              data-description="Description for project two."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -291,6 +308,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S2_AD_03.jpg')"
+              data-image="assets/images/S2_AD_03.jpg"
+              data-title="Project Three"
+              data-date="March 2024"
+              data-description="Description for project three."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -306,6 +330,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S2_AD_04.jpg')"
+              data-image="assets/images/S2_AD_04.jpg"
+              data-title="Project Four"
+              data-date="April 2024"
+              data-description="Description for project four."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -321,6 +352,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S2_AD_05.jpg')"
+              data-image="assets/images/S2_AD_05.jpg"
+              data-title="Project Five"
+              data-date="May 2024"
+              data-description="Description for project five."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -343,6 +381,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S3_I_01.jpg')"
+              data-image="assets/images/S3_I_01.jpg"
+              data-title="Project One"
+              data-date="January 2024"
+              data-description="Description for project one."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -358,6 +403,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S3_I_02.jpg')"
+              data-image="assets/images/S3_I_02.jpg"
+              data-title="Project Two"
+              data-date="February 2024"
+              data-description="Description for project two."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -373,6 +425,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S3_I_03.jpg')"
+              data-image="assets/images/S3_I_03.jpg"
+              data-title="Project Three"
+              data-date="March 2024"
+              data-description="Description for project three."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -388,6 +447,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S3_I_04.jpg')"
+              data-image="assets/images/S3_I_04.jpg"
+              data-title="Project Four"
+              data-date="April 2024"
+              data-description="Description for project four."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -403,6 +469,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S3_I_05.jpg')"
+              data-image="assets/images/S3_I_05.jpg"
+              data-title="Project Five"
+              data-date="May 2024"
+              data-description="Description for project five."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -418,6 +491,13 @@
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S3_I_06.jpg')"
+              data-image="assets/images/S3_I_06.jpg"
+              data-title="Project Six"
+              data-date="June 2024"
+              data-description="Description for project six."
+              onclick="openProjectModal(this)"
+              role="button"
+              tabindex="0"
             >
               <div class="project-overlay">
                 <h4 class="project-name">Title here</h4>
@@ -430,6 +510,49 @@
         </div>
       </div>
     </section>
+
+    <!-- Project Modal -->
+    <div
+      class="project-modal"
+      id="projectModal"
+      onclick="closeModalOnOutsideClick(event)"
+    >
+      <div class="project-card-popup" onclick="event.stopPropagation()">
+        <button
+          class="close-btn"
+          onclick="closeProjectModal()"
+          aria-label="Close"
+        ></button>
+
+        <img
+          src=""
+          alt="Project Preview"
+          class="project-popup-image"
+          id="modalImage"
+        />
+
+        <div class="project-popup-content">
+          <h2 class="project-popup-title" id="modalTitle"></h2>
+          <p class="project-popup-date" id="modalDate"></p>
+          <p class="project-popup-description" id="modalDescription"></p>
+
+          <a href="#" class="project-popup-link">
+            See more
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <!-- Scroll to Top Button -->
     <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
