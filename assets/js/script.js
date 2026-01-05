@@ -22,3 +22,25 @@ scrollTopBtn.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+function openProjectModal() {
+  document.getElementById("projectModal").classList.add("active"); // Prevent scrolling
+}
+
+function closeProjectModal() {
+  document.getElementById("projectModal").classList.remove("active");
+  document.body.style.overflow = ""; // Restore scrolling
+}
+
+function closeModalOnOutsideClick(event) {
+  if (event.target === document.getElementById("projectModal")) {
+    closeProjectModal();
+  }
+}
+
+// Close on Escape key
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeProjectModal();
+  }
+});
