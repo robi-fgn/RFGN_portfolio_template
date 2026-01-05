@@ -20,12 +20,6 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.brand {
-  font-size: 24px;
-  font-weight: bold;
-  color: #000000;
-}
-
 .nav-links {
   display: flex;
   gap: 30px;
@@ -144,6 +138,7 @@
 .menu-item:hover::after {
   width: 100%;
 }
+
 .gallery-section {
   padding: 60px 0;
 }
@@ -248,6 +243,61 @@
   .project-description {
     font-size: clamp(0.85rem, 2.5vw, 0.9rem);
   }
+}
+
+.footer-section {
+  background-color: #630000;
+  color: #fffaf1;
+  min-height: 40vh;
+}
+
+.footer-text {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.footer-item {
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #fffaf1;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.footer-item-title {
+  font-family: "Caprasimo", cursive;
+  font-style: normal;
+  font-size: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+/* Underline effect on hover */
+.footer-item-title::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fffaf1;
+  transition: width 0.3s ease;
+}
+
+.footer-item:hover .footer-item-title::after {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .footer-item-title {
+    font-size: 1.25rem;
+  }
+}
+
+.off-white {
+  color: #fffaf1;
 }
 
 /* Scroll to Top Button */
