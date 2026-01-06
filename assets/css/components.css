@@ -361,35 +361,31 @@
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  color: #141414;
+  color: #000000;
   font-family: "EB Garamond", serif;
   font-size: 1.1rem;
   font-weight: 600;
   position: relative;
-  padding-bottom: 3px;
+  transition: transform 0.3s ease;
 }
 
 .project-popup-link::after {
   content: "";
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
-  width: 100%;
+  width: 0;
   height: 2px;
   background-color: #000;
+  transition: width 0.3s ease;
 }
 
 .project-popup-link:hover {
-  color: #c60000;
+  transform: translateX(5px);
 }
 
 .project-popup-link:hover::after {
-  background-color: #c60000;
-}
-
-.project-popup-link svg {
-  width: 16px;
-  height: 16px;
+  width: 100%;
 }
 
 @media (max-width: 576px) {
@@ -624,11 +620,6 @@
 
 .back-link:hover::after {
   width: 100%;
-}
-
-.arrow-icon {
-  width: 20px;
-  height: 20px;
 }
 
 @media (max-width: 768px) {
