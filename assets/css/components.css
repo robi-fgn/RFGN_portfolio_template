@@ -1,4 +1,4 @@
-/* Navbar */
+/* NAVBAR */
 .navbar {
   position: fixed;
   top: 0;
@@ -37,7 +37,7 @@
   color: #e60000;
 }
 
-/* Hero Section */
+/* HERO SECTION */
 
 .hero-section {
   position: relative;
@@ -97,7 +97,7 @@
   margin: 0;
 }
 
-/* Menu */
+/* MENU */
 .menu-wrapper {
   display: flex;
   flex-direction: column;
@@ -150,7 +150,7 @@
   margin-bottom: 24px;
 }
 
-/* Category Card Styles */
+/* CATEGORY CARDS */
 .category-card {
   background-color: #c60000;
   border: #000 3px solid;
@@ -161,7 +161,6 @@
   transition: background-color 0.3s ease;
 }
 
-/* Make category cards rectangular on mobile (single column) */
 @media (max-width: 575px) {
   .category-card {
     aspect-ratio: 16 / 9;
@@ -182,7 +181,7 @@
   word-spacing: 100vw;
 }
 
-/* Project Card Styles */
+/* PROJECT CARDS */
 .project-card {
   background-size: cover;
   background-position: center;
@@ -230,7 +229,6 @@
   font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
-/* Responsive adjustments */
 @media (max-width: 767px) {
   .category-title {
     font-size: clamp(1.5rem, 5vw, 1.7rem);
@@ -245,7 +243,7 @@
   }
 }
 
-/* Modal Overlay */
+/* MODAL OVERLAY CARDS */
 .project-modal {
   display: none;
   position: fixed;
@@ -264,7 +262,6 @@
   display: flex;
 }
 
-/* Modal Card */
 .project-card-popup {
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(7px);
@@ -281,7 +278,6 @@
   position: relative;
 }
 
-/* Close Button */
 .close-btn {
   position: absolute;
   top: 15px;
@@ -318,7 +314,6 @@
   transform: rotate(-45deg);
 }
 
-/* Project Image */
 .project-popup-image {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -326,7 +321,6 @@
   display: block;
 }
 
-/* Project Info */
 .project-popup-content {
   padding: 30px;
 }
@@ -355,7 +349,6 @@
   margin-bottom: 25px;
 }
 
-/* See More Link */
 .project-popup-link {
   display: inline-flex;
   align-items: center;
@@ -471,7 +464,7 @@
   color: #fffaf1;
 }
 
-/* Scroll to Top Button */
+/* SCROLL-TO-TOP BUTTON */
 .scroll-top-btn {
   position: fixed;
   bottom: 30px;
@@ -639,5 +632,129 @@
 
   .error-message {
     font-size: 20px;
+  }
+}
+
+/* ABOUT PAGE */
+.about-image {
+  border: 3px solid #000;
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .about-image {
+    aspect-ratio: 3/4;
+    max-height: 75vh;
+  }
+
+  .awards-section {
+    margin-top: -1rem !important;
+  }
+
+  .about-image-wrapper {
+    align-self: start;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-image {
+    aspect-ratio: 16/9;
+    max-height: 50vh;
+  }
+}
+
+/* CONTACT PAGE */
+.contact-box {
+  max-width: 500px;
+}
+
+.contact-title {
+  font-size: clamp(1.75rem, 4vw, 2rem);
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.contact-intro {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.contact-info p {
+  margin-bottom: 15px;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  color: #000;
+}
+
+.contact-info strong {
+  font-weight: 600;
+}
+
+.contact-link {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #c60000;
+}
+
+.contact-socials {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 20px;
+  border-top: 2px solid #000;
+}
+
+.contact-social-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+  color: #000;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.contact-social-link span {
+  position: relative;
+  display: inline-block;
+}
+
+.contact-social-link span::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.contact-social-link:hover span::after {
+  width: 100%;
+}
+
+.contact-social-link:hover {
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .contact-box {
+    padding: 40px 30px;
   }
 }

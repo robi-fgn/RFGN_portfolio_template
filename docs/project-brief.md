@@ -5,6 +5,8 @@
 **Course:** Web Design 2025 · Fall
 **Deadline:** 09/01/2026
 
+**Technical level:** Vanilla (Grade 1)
+
 ---
 
 ## Project Concept
@@ -46,7 +48,7 @@ In a project that could be used by so many people, I valued it's visual potentia
 - [x] Alt text for images
 - [ ] Keyboard navigation support
 - [x] Color contrast compliance
-- [ ] Screen reader compatibility
+- [x] Screen reader compatibility
 
 ### Responsive Design Strategy
 
@@ -68,12 +70,15 @@ In a project that could be used by so many people, I valued it's visual potentia
 4. Gallery divided in sections
 5. Information cards for each project
 6. Footer with links
+7. About me page
+8. Contact page
+9. Error 404 page with back-link
 
 ### Content Sources
 
 <!-- Where will your content come from? -->
 
-Content is statically authored and embedded directly in the HTML. The text is written manually and the images are locally hosted assets, no external APIs or CMS are used. Fonts are applied viaCDN from Google Fonts
+Content is statically authored and embedded directly in the HTML. The text is written manually and the images are locally hosted assets, no external APIs or CMS are used. Fonts are applied viaCDN from Google Fonts.
 
 ### Multilingual Considerations
 
@@ -95,7 +100,7 @@ The style chosen for this project was retro modernism. The elements used in the 
 
 <!-- List your main colors -->
 
-The main color palette covers a broken black and white vibe where off-white, off-black and beige tones are used for ambience and pure black and white elements stand out (mainly typography and borders). Red is used as an accent tone that can be seen both in the projects and throughout the website.
+The main color palette covers a broken black and white vibe where off-white, off-black and beige tones are used for ambience, while pure black and white are used for elements to stand out (mainly typography and borders). Red is used as an accent tone that can be seen both in the projects and throughout the website.
 
 Main colors:
 
@@ -138,7 +143,7 @@ Typographically, EB Garamond helped acquire the retro effect while Caprasimo lea
 - [x] Fully responsive across devices
 - [x] Meets WCAG 2.1 AA standards
 - [x] Fast loading performance
-- [ ] Complete content
+- [x] Complete content
 - [x] Polished visual design
 
 ---
@@ -147,13 +152,13 @@ Typographically, EB Garamond helped acquire the retro effect while Caprasimo lea
 
 ### What excites you most about this project?
 
-Mainly the fact that it may be my future portfolio as I really like the final aspect it has, but also the potential of optimizing the CSS (especially for the red color to be easily changed) aand maybe gaining some money from sharing the template and even customizing it for other people.
+Mainly the fact that it may be my future portfolio as I really like the final aspect it has, but also the potential of optimizing the CSS (especially for the red color to be easily changed) and maybe being able to sell the template and even custome it for clients.
 
 ### What challenges do you anticipate?
 
 As I already said, I want to optimize the css classes for colors, and I can already imagine that having images stored locally might not be the best option for the future deployment of the website, so I may have to look into other alternatives.
 
-I also lack a lot of knowledge on coding so I may need some help from the AI to troubleshoot future problems. Despite this, I'm excited to keep working on this template and finish the "about" and "contact me" sections, which I couldn't get to on time but I know will be simpler and probably easier to make.
+I also lack a lot of knowledge on coding so I may need some help from the AI to troubleshoot future problems. Despite this, I'm excited to keep working on this template and maybe implement the "about" and "contact me" sections into the main homepage, which I'd prefer rather than what I have now (which is still pretty good, I'd say, for what I expected to be able to make).
 
 ### How does this project connect to your learning goals?
 

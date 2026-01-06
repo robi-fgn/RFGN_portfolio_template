@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Template · Retro-modernist Portfolio</title>
 
-    <!-- Bootstrap link -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
-    <!-- Font families from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,30 +17,30 @@
       rel="stylesheet"
     />
 
-    <!-- Local CSS -->
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
-    <link rel="stylesheet" href="assets/css/other.css" />
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- NAVBAR -->
     <nav class="navbar py-3 px-3 px-md-5">
       <div>
-        <a href="index.html"
-          ><img src="assets/images/logoipsum-288.svg" alt="FGN Studio Logo"
+        <a href="index.html">
+          <!-- Update the source of the image to have your logo -->
+          <img src="assets/images/logoipsum-288.svg" alt="FGN Studio Logo"
         /></a>
       </div>
       <div class="nav-links">
-        <a href="404.html">About</a>
-        <a href="404.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
       </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- HERO SECTION -->
     <section
       class="hero-section d-flex flex-column justify-content-end px-3 px-md-5 pb-4 pb-md-5"
     >
       <div class="hero-content mb-4 mb-md-5">
+        <!-- Update here the welcome message's title and description -->
         <h1 class="hero-title mb-3">Designing Narratives</h1>
         <p class="hero-description">
           In the ordered chaos of a designer's creations, one may find the
@@ -53,12 +51,13 @@
       </div>
     </section>
 
-    <!-- Menu Section -->
+    <!-- MENU SECTION -->
     <div class="menu-wrapper py-5">
       <div class="menu-line"></div>
       <nav
         class="d-flex flex-column flex-md-row justify-content-center align-items-center text-center gap-3 gap-md-5 py-3"
       >
+        <!-- Update to match the section names, and section IDs -->
         <a href="#editorial-design" class="menu-item">Editorial Design</a>
         <a href="#art-direction" class="menu-item">Art Direction</a>
         <a href="#illustration" class="menu-item">Illustration</a>
@@ -66,18 +65,21 @@
       <div class="menu-line"></div>
     </div>
 
-    <!-- Main Content -->
+    <!-- GALLERY SECTION -->
     <section class="gallery-section">
       <div class="container-fluid px-4">
         <div class="row">
-          <!-- Editorial Design Category -->
+          <!-- CATEGORY CARD -->
+          <!-- Copy and paste this block at the start of each category section. Update the section title and the id (it must match the title and href in the menu) -->
           <div id="editorial-design" class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="gallery-item category-card">
               <h3 class="category-title">Editorial Design</h3>
             </div>
           </div>
-          <!-- Section 1 Project 1 -->
+          <!-- PROJECT CARD -->
+          <!-- Copy and paste this block to add any new project -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            <!-- Update the image path (url), project title (data-title), project details (data-description) and date (data-date) here -->
             <div
               class="gallery-item project-card"
               style="background-image: url('assets/images/S1_ED_01.jpg')"
@@ -89,6 +91,7 @@
               role="button"
               tabindex="0"
             >
+              <!-- Update the Project Title and Subtitle here -->
               <div class="project-overlay">
                 <h4 class="project-name">Project One</h4>
                 <p class="project-description">
@@ -98,7 +101,7 @@
             </div>
           </div>
 
-          <!-- Section 1 Project 2 -->
+          <!-- SECTION 1 PROJECT 2 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -120,7 +123,7 @@
             </div>
           </div>
 
-          <!-- Section 1 Project 3 -->
+          <!-- SECTION 1 PROJECT 3 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -142,7 +145,7 @@
             </div>
           </div>
 
-          <!-- Section 1 Project 4 -->
+          <!-- SECTION 1 PROJECT 4 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -164,7 +167,7 @@
             </div>
           </div>
 
-          <!-- Section 1 Project 5 -->
+          <!-- SECTION 1 PROJECT 5 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -186,7 +189,7 @@
             </div>
           </div>
 
-          <!-- Section 1 Project 6 -->
+          <!-- SECTION 1 PROJECT 6 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -208,7 +211,7 @@
             </div>
           </div>
 
-          <!-- Section 1 Project 7 -->
+          <!-- SECTION 1 PROJECT 7 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -230,7 +233,7 @@
             </div>
           </div>
 
-          <!-- Section 1 Project 8 -->
+          <!-- SECTION 1 PROJECT 8 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -252,14 +255,14 @@
             </div>
           </div>
 
-          <!-- Art Direction Category -->
+          <!-- CATEGORY CARD -->
           <div id="art-direction" class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="gallery-item category-card">
               <h3 class="category-title">Art Direction</h3>
             </div>
           </div>
 
-          <!-- Section 2 Project 1 -->
+          <!-- SECTION 2 PROJECT 1 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -281,7 +284,7 @@
             </div>
           </div>
 
-          <!-- Section 2 Project 2 -->
+          <!-- SECTION 2 PROJECT 2 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -303,7 +306,7 @@
             </div>
           </div>
 
-          <!-- Section 2 Project 3 -->
+          <!-- SECTION 2 PROJECT 3 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -325,7 +328,7 @@
             </div>
           </div>
 
-          <!-- Section 2 Project 4 -->
+          <!-- SECTION 2 PROJECT 4 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -347,7 +350,7 @@
             </div>
           </div>
 
-          <!-- Section 2 Project 5 -->
+          <!-- SECTION 2 PROJECT 5 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -369,14 +372,14 @@
             </div>
           </div>
 
-          <!-- Illustration Category -->
+          <!-- CATEGORY CARD -->
           <div id="illustration" class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="gallery-item category-card">
               <h3 class="category-title">Illustration</h3>
             </div>
           </div>
 
-          <!-- Section 3 Project 1 -->
+          <!-- SECTION 3 PROJECT 1 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -398,7 +401,7 @@
             </div>
           </div>
 
-          <!-- Section 3 Project 2 -->
+          <!-- SECTION 3 PROJECT 2 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -420,7 +423,7 @@
             </div>
           </div>
 
-          <!-- Section 3 Project 3 -->
+          <!-- SECTION 3 PROJECT 3 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -442,7 +445,7 @@
             </div>
           </div>
 
-          <!-- Section 3 Project 4 -->
+          <!-- SECTION 3 PROJECT 4 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -464,7 +467,7 @@
             </div>
           </div>
 
-          <!-- Section 3 Project 5 -->
+          <!-- SECTION 3 PROJECT 5 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -486,7 +489,7 @@
             </div>
           </div>
 
-          <!-- Section 3 Project 6 -->
+          <!-- SECTION 3 PROJECT 6 -->
           <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div
               class="gallery-item project-card"
@@ -511,7 +514,7 @@
       </div>
     </section>
 
-    <!-- Project Modal -->
+    <!-- PROJECT MODAL CARD -->
     <div
       class="project-modal"
       id="projectModal"
@@ -536,6 +539,7 @@
           <p class="project-popup-date" id="modalDate"></p>
           <p class="project-popup-description" id="modalDescription"></p>
 
+          <!-- Update the link to your behance projects page -->
           <a href="404.html" class="project-popup-link">
             See more
             <img
@@ -547,17 +551,17 @@
       </div>
     </div>
 
-    <!-- Scroll to Top Button -->
+    <!-- SCROLL TO TOP BUTTON -->
     <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
       <img src="assets/images/Arrow-up.svg" alt="Arrow up" />
     </button>
 
-    <!-- Footer Section -->
+    <!-- FOOTER -->
     <footer class="footer-section d-flex align-items-center">
       <div class="container-fluid px-4 px-md-5">
         <div class="row align-items-center">
-          <!-- Logo Column -->
           <div class="col-12 col-lg-4 mb-5 mt-5 mb-lg-0">
+            <!-- Update the source of the image to have your logo -->
             <img
               src="assets/images/logoipsum-288.svg"
               alt="Logo"
@@ -565,7 +569,6 @@
             />
           </div>
 
-          <!-- Links Column -->
           <div class="col-12 col-lg-8 mb-5">
             <p class="footer-text mt-5 off-white">
               Copyright notice © 2024 Robi Falagán. All rights reserved.<br />
@@ -575,6 +578,7 @@
               >, or check out their socials!
             </p>
 
+            <!-- Update the Instagram link -->
             <a
               href="https://www.instagram.com/fgn_design"
               target="_blank"
@@ -587,6 +591,7 @@
               />
             </a>
 
+            <!-- Update the Behance link -->
             <a
               href="https://www.behance.net/robifalagan"
               target="_blank"
@@ -599,6 +604,7 @@
               />
             </a>
 
+            <!-- Update the Linkedin link -->
             <a
               href="https://www.linkedin.com/in/robi-falag%C3%A1n-922b61292/"
               target="_blank"
