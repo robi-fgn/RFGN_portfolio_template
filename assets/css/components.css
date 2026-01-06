@@ -522,3 +522,131 @@
     height: 20px;
   }
 }
+
+.background-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  gap: 8px;
+  animation: scrollUp 30s linear infinite;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.grid-item {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #000;
+  overflow: hidden;
+  background-color: #000;
+  flex-shrink: 0;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.message-box {
+  background-color: white;
+  padding: 60px 80px;
+  text-align: center;
+  pointer-events: auto;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.error-title {
+  font-size: clamp(1.5rem, 4vw, 1.875rem);
+  font-weight: 600;
+  font-style: normal;
+  color: #000;
+}
+
+.error-message {
+  font-size: clamp(1.125rem, 3vw, 1.5rem);
+  color: #000;
+  margin-bottom: 35px;
+  line-height: 1.4;
+}
+
+.back-link {
+  font-family: "EB Garamond", serif;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: #000;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.back-link:hover {
+  transform: translateX(5px);
+}
+
+.back-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+
+.back-link:hover::after {
+  width: 100%;
+}
+
+.arrow-icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .grid-item {
+    width: 200px;
+    height: 200px;
+  }
+
+  .message-box {
+    padding: 40px 50px;
+    margin: 0 20px;
+  }
+
+  .error-title {
+    font-size: 36px;
+  }
+
+  .error-message {
+    font-size: 20px;
+  }
+}

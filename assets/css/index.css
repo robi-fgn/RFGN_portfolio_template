@@ -12,10 +12,7 @@ body {
   font-family: "EB Garamond", serif;
   font-weight: 500;
   color: #111;
-  background: linear-gradient(
-    rgba(245, 245, 245, 1) 0%,
-    rgba(222, 208, 195, 1) 100%
-  );
+  background: linear-gradient(#f5f5f5 0%, #ded0c3 100%);
   overflow-x: hidden;
   cursor: url("../images/Red-pointer.svg") 8 8, auto;
 }

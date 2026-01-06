@@ -1,13 +1,18 @@
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 const gallerySection = document.querySelector(".gallery-section");
 
-// Show button when gallery section is reached
+// Show/hide button based on scroll position
 window.addEventListener("scroll", () => {
-  if (gallerySection) {
+  if (gallerySection && footerSection) {
     const galleryTop = gallerySection.offsetTop;
+    const footerTop = footerSection.offsetTop;
     const scrollPosition = window.scrollY + window.innerHeight;
 
-    if (scrollPosition >= galleryTop) {
+    // Show button when gallery is reached
+    if (
+      scrollPosition >= galleryTop &&
+      window.scrollY < footerTop - window.innerHeight
+    ) {
       scrollTopBtn.classList.add("visible");
     } else {
       scrollTopBtn.classList.remove("visible");
