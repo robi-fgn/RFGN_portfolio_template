@@ -2,11 +2,11 @@
 
 ## Plan Overview
 
-### → Objective
+##### → Objective
 
 I didn't know how to create an animated bavkground for the 404 page, and I wanted to link it to all of the images used in the project cards from the gallery at the homepage.
 
-### → Request
+##### → Request
 
 I want to create a grid of images that moves upwards in the background of my error 404 page. I wwill add a box manually afterwards with the 404 message so don't do that yet. I attached a reference image of the original gallery site so that the 404 background is similar (square boxes with an image each and thick black borders).
 

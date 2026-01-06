@@ -1,5 +1,6 @@
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 const gallerySection = document.querySelector(".gallery-section");
+const footerSection = document.querySelector(".footer-section");
 
 // Show/hide button based on scroll position
 window.addEventListener("scroll", () => {
