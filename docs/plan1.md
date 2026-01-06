@@ -16,7 +16,7 @@ I am building my portfolio website's hero section. The body of the site already 
 
 This is the cleanest solution using a CSS mask.
 
-Add this to the "::before" pseudo-element:
+Add this to the ::before pseudo-element:
 
 ```css
 .hero-section::before {
